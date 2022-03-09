@@ -103,7 +103,11 @@
             :class="{ 'is-invalid': this.errors.seller }"
             v-model="celler"
           >
-            <option v-for="item in cellers" :key="item.cod_erp">
+            <option
+              v-for="item in cellers"
+              :key="item.cod_erp"
+              :value="item.cod_erp"
+            >
               {{ item.descripcion }}
             </option>
           </select>
